@@ -28,9 +28,9 @@
       </tr>
     </thead>
     <tbody>
-      <c:forEach items="${listaPersonas}" var="miUsuario">
+      <c:forEach items="${listaPersonas}" var="miUsuario" varStatus="numeroLista">
         <tr>
-          <th scope="row">1</th>
+          <th scope="row">${numeroLista.count}</th>
           <td>${miUsuario.name}</td>
           <td>${miUsuario.apellido}</td>
           <td>${miUsuario.edad}</td>
